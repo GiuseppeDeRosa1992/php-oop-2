@@ -2,3 +2,8 @@ body {
     background-color: black;
     color: white;
 }
+
+.my-w {
+    width: 5rem;
+    height: 5rem;
+}

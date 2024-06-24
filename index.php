@@ -53,7 +53,7 @@ include __DIR__ . "/store.php";
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_cibo as $cibo) { ?>
             <div class="card col-4 px-3 py-4 bg-black">
-                <img src="<?= $cibo->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cibi">
+                <img src="<?= $cibo->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
                 <div class="card-body bg-secondary text-center">
                     <h5 class="card-title"><b>Marca:</b> <?= $cibo->prodotto->marca ?></h5>
                     <p class="card-text"><b>Prezzo:</b> <?= $cibo->prodotto->prezzo ?> <b>€</b></p>
