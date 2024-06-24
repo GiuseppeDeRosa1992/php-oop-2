@@ -7,6 +7,7 @@ class Prodotto
     public $immagine;
     public $categoria;
 
+    //costrutto di prodotto che ha dentro la classe categoria in cui ci sono altre variabili
     public function __construct($nome, $prezzo, $immagine, Categoria $categoria)
     {
         $this->nome = $nome;

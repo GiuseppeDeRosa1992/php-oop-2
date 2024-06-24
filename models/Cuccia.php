@@ -1,15 +1,13 @@
 <?php
 
-class Cuccia extends Prodotto
+class Cuccia
 {
     public $cuccia;
+    public $prodotto;
 
-    public function __construct($nome, $prezzo, $immagine, $cuccia, Categoria $categoria)
+    public function __construct(Prodotto $prodotto, $cuccia,)
     {
-        $this->nome = $nome;
-        $this->prezzo = $prezzo;
-        $this->immagine = $immagine;
+        $this->prodotto = $prodotto;
         $this->cuccia = $cuccia;
-        $this->categoria = $categoria;
     }
 }
