@@ -2,15 +2,15 @@
 
 class Prodotto
 {
-    public $nome;
+    public $marca;
     public $prezzo;
     public $immagine;
     public $categoria;
 
     //costrutto di prodotto che ha dentro la classe categoria in cui ci sono altre variabili
-    public function __construct($nome, $prezzo, $immagine, Categoria $categoria)
+    public function __construct($marca, $prezzo, $immagine, Categoria $categoria)
     {
-        $this->nome = $nome;
+        $this->marca = $marca;
         $this->prezzo = $prezzo;
         $this->immagine = $immagine;
         $this->categoria = $categoria;
