@@ -1,13 +1,19 @@
 <?php
 
-class Cuccia
+class Cuccia extends Prodotto
 {
-    public $cuccia;
-    public $prodotto;
+    public $dimensioni_cuccia;
+    public $materiale_cuccia;
 
-    public function __construct(Prodotto $prodotto, $cuccia,)
+    //costrutto di prodotto che ha dentro la classe categoria in cui ci sono altre variabili
+    public function __construct($marca, $nome, $prezzo, $immagine, Categoria $categoria, $dimensioni, $materiale)
     {
-        $this->prodotto = $prodotto;
-        $this->cuccia = $cuccia;
+        $this->marca = $marca;
+        $this->nome = $nome;
+        $this->prezzo = $prezzo;
+        $this->immagine = $immagine;
+        $this->categoria = $categoria;
+        $this->dimensioni_cuccia = $dimensioni;
+        $this->materiale_cuccia = $materiale;
     }
 }

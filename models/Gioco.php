@@ -1,14 +1,18 @@
 <?php
 
-class Gioco
+class Gioco extends Prodotto
 {
-    public $gioco;
-    public $prodotto;
+    public $materiale_gioco;
 
-    //costrutto per la classe gioco dove aggiungo quello che c'è nella classe prodotto
-    public function __construct(Prodotto $prodotto, $gioco)
+
+    //costrutto di prodotto e in piu aggiungo nuova variabile
+    public function __construct($marca, $nome, $prezzo, $immagine, Categoria $categoria, $materiale)
     {
-        $this->prodotto = $prodotto;
-        $this->gioco = $gioco;
+        $this->marca = $marca;
+        $this->nome = $nome;
+        $this->prezzo = $prezzo;
+        $this->immagine = $immagine;
+        $this->categoria = $categoria;
+        $this->materiale_gioco = $materiale;
     }
 }

@@ -21,13 +21,13 @@ include __DIR__ . "/store.php";
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_gioco as $gioco) { ?>
             <div class="card col-2 px-2 py-2 bg-black">
-                <img src="<?= $gioco->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-giochi">
+                <img src="<?= $gioco->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-giochi">
                 <div class="card-body bg-secondary text-center">
-                    <h5 class="card-title"><b>Marca:</b> <?= $gioco->prodotto->marca ?></h5>
-                    <p class="card-text"><b>Prezzo:</b> <?= $gioco->prodotto->prezzo ?> <b>€</b></p>
-                    <p class="card-text"><b>Tipo:</b> <?= $gioco->gioco ?></p>
+                    <h6 class="card-title"><b>Marca:</b> <?= $gioco->marca ?></h6>
+                    <p class="card-text"><b>Prezzo:</b> <?= $gioco->prezzo ?> <b>€</b></p>
+                    <p class="card-text"><b>Tipo:</b> <?= $gioco->materiale_gioco ?></p>
                     <p class="card-text"><b>Adatto Per:</b></p>
-                    <img src="<?= $gioco->prodotto->categoria->get_icona() ?>" alt="" class="my-w">
+                    <img src="<?= $gioco->categoria->get_icona() ?>" alt="" class="my-w">
                 </div>
             </div>
         <?php } ?>
@@ -37,13 +37,14 @@ include __DIR__ . "/store.php";
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_cuccia as $cuccia) { ?>
             <div class="card col-2 px-2 py-2 bg-black">
-                <img src="<?= $cuccia->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
+                <img src="<?= $cuccia->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
                 <div class="card-body bg-secondary text-center">
-                    <h5 class="card-title"><b>Marca:</b> <?= $cuccia->prodotto->marca ?></h5>
-                    <p class="card-text"><b>Prezzo:</b> <?= $cuccia->prodotto->prezzo ?> <b>€</b></p>
-                    <p class="card-text"><b>Tipo:</b> <?= $cuccia->cuccia ?></p>
+                    <h6 class="card-title"><b>Marca:</b> <?= $cuccia->marca ?></h6>
+                    <p class="card-text"><b>Prezzo:</b> <?= $cuccia->prezzo ?> <b>€</b></p>
+                    <p class="card-text"><b>Dimensione:</b> <?= $cuccia->dimensioni_cuccia ?></p>
+                    <p class="card-text"><b>Materiale:</b> <?= $cuccia->materiale_cuccia ?></p>
                     <p class="card-text"><b>Adatto Per:</b></p>
-                    <img src="<?= $cuccia->prodotto->categoria->get_icona() ?>" alt="" class="my-w">
+                    <img src="<?= $cuccia->categoria->get_icona() ?>" alt="" class="my-w">
                 </div>
             </div>
         <?php } ?>
@@ -53,13 +54,14 @@ include __DIR__ . "/store.php";
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_cibo as $cibo) { ?>
             <div class="card col-2 px-2 py-2 bg-black">
-                <img src="<?= $cibo->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
+                <img src="<?= $cibo->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
                 <div class="card-body bg-secondary text-center">
-                    <h5 class="card-title"><b>Marca:</b> <?= $cibo->prodotto->marca ?></h5>
-                    <p class="card-text"><b>Prezzo:</b> <?= $cibo->prodotto->prezzo ?> <b>€</b></p>
-                    <p class="card-text"><b>Tipo:</b> <?= $cibo->cibo ?></p>
+                    <h6 class="card-title"><b>Marca:</b> <?= $cibo->marca ?></h6>
+                    <p class="card-text"><b>Prezzo:</b> <?= $cibo->prezzo ?> <b>€</b></p>
+                    <p class="card-text"><b>Calorie:</b> <?= $cibo->kcal_cibo ?></p>
+                    <p class="card-text"><b>Tipo:</b> <?= $cibo->tipo_cibo ?></p>
                     <p class="card-text"><b>Adatto Per:</b></p>
-                    <img src="<?= $cibo->prodotto->categoria->get_icona() ?>" alt="" class="my-w">
+                    <img src="<?= $cibo->categoria->get_icona() ?>" alt="" class="my-w">
                 </div>
             </div>
         <?php } ?>
