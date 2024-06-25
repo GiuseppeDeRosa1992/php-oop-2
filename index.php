@@ -20,7 +20,7 @@ include __DIR__ . "/store.php";
     <h2 class="text-center">Le Card dei giochi per animali sono:</h2>
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_gioco as $gioco) { ?>
-            <div class="card col-4 px-3 py-4 bg-black">
+            <div class="card col-2 px-2 py-2 bg-black">
                 <img src="<?= $gioco->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-giochi">
                 <div class="card-body bg-secondary text-center">
                     <h5 class="card-title"><b>Marca:</b> <?= $gioco->prodotto->marca ?></h5>
@@ -36,7 +36,7 @@ include __DIR__ . "/store.php";
     <h2 class="text-center">Le Card delle Cucce per animali sono:</h2>
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_cuccia as $cuccia) { ?>
-            <div class="card col-4 px-3 py-4 bg-black">
+            <div class="card col-2 px-2 py-2 bg-black">
                 <img src="<?= $cuccia->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
                 <div class="card-body bg-secondary text-center">
                     <h5 class="card-title"><b>Marca:</b> <?= $cuccia->prodotto->marca ?></h5>
@@ -52,7 +52,7 @@ include __DIR__ . "/store.php";
     <h2 class="text-center">Le Card dei Cibi per animali sono:</h2>
     <div class="row m-0 p-0 justify-content-between">
         <?php foreach ($prodotti_cibo as $cibo) { ?>
-            <div class="card col-4 px-3 py-4 bg-black">
+            <div class="card col-2 px-2 py-2 bg-black">
                 <img src="<?= $cibo->prodotto->immagine ?>" class="card-img-top img-fluid h-50" alt="immagine-cucce">
                 <div class="card-body bg-secondary text-center">
                     <h5 class="card-title"><b>Marca:</b> <?= $cibo->prodotto->marca ?></h5>
